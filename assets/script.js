@@ -25,6 +25,19 @@ if (age <= 18){
   prezzoNetto = prezzoLordo
 }
 
-console.log('Prezzo finale già scontato -->', prezzoNetto)
+console.log('Prezzo finale già scontato -->', prezzoNetto);
 
+if (age <= 18){
+  currentDiscount = "20 %";
+}else if (age >= 65){
+  currentDiscount = "40 %";
+}else {
+  currentDiscount = "0 %";
+}
 
+console.log(currentDiscount);
+
+document.getElementById("outputFinalPrice").innerHTML ="€ "+ prezzoNetto;
+document.getElementById("outputAge").innerHTML = age;
+document.getElementById("discountOutput").innerHTML = currentDiscount;
+document.getElementById("outputPercorrenza").innerHTML = (kmDaPercorrere.toFixed(2)) + " " + "Km";
