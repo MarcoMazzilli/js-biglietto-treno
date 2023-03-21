@@ -12,7 +12,7 @@ const discountOver = 40;
 
 //Risultati delle operazioni
 let prezzoLordoDecimale = kmDaPercorrere * prezzoAlKm;
-let prezzoLordo =parseFloat(prezzoLordoDecimale.toFixed(2));
+let prezzoLordoDecimale =parseFloat(prezzoLordoDecimale.toFixed(2));
 
 console.log('Prezzo totale non scontato (lordo) -->',prezzoLordo);
 
